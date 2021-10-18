@@ -1,0 +1,19 @@
+.banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner1 {
+    background-image: url('../../../assets/images/banner-1.jpg');
+}
+
+.banner-content-bg {
+    background-color: #3da9fc62;
+}
+
+.banner p {
+    font-size: 20px;
+}

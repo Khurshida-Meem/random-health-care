@@ -6,10 +6,10 @@ import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
-    //npm i swiper
 
     return (
         <Navbar className="light-bg" expand="lg">
+            <Navbar sticky="top" />
             <Container>
                 <Navbar.Brand href="#"><img
                     src={logo}
@@ -18,7 +18,7 @@ const Header = () => {
                     className="d-inline-block align-top"
                     alt="logo"
                 /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Toggle className="border-0 text-white" aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="ms-auto">
                         <NavLink className="navlinks text-white me-3 pb-2" to='/home'>HOME</NavLink>

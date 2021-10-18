@@ -13,6 +13,10 @@ body {
   color: #ef4565;
 }
 
+.dark-text {
+  color: #094067;
+}
+
 h1,
 h2,
 h3,
@@ -28,6 +32,10 @@ p {
 
 .p-secondary {
   color: #90b4ce;
+}
+
+.pink-bg {
+  background-color: #ef4565;
 }
 
 .light-bg {

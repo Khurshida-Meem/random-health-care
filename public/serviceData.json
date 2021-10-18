@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name":"Long COVID",
+        "shortline": "UCLA Health experts collaborate across departments to offer comprehensive care for people with long-haul COVID symptoms.",
+        "thumb": "https://i.ibb.co/72gQC8M/service-1.jpg",
+        "treated": 699,
+        "rating": 4.7,
+        "description": "The U.S. Centers for Disease Control and Prevention (CDC) define long COVID as a group of symptoms that linger for weeks or months after a COVID-19 infection. About one out of every three people who had coronavirus develops long COVID or “long haulers.”"
+    },
+    {
+        "id": 2,
+       "name":"Anesthesiology & Preoperative Medicine",
+        "shortline": "Our anesthesiology team uses the safest, highest-quality techniques to offer comprehensive pain control.",
+        "thumb": "https://i.ibb.co/zRzcqdJ/service-2.jpg",
+        "treated": 999,
+        "rating": 4.8,
+        "description": "The UCLA Health anesthesiology team is made up of leaders in clinical care and research. Our team includes more than 200 clinical and research faculty. More than 100 residents and fellows, nurse anesthetists and clinical staff support them in delivering safe, effective care."
+    },
+    {
+        "id": 3,
+       "name":"Endocrinology",
+        "shortline": "Our endocrinologists offer expert, targeted care for endocrine and metabolic disorders.",
+        "thumb": "https://i.ibb.co/5vJxSM3/service-3.jpg",
+        "treated": 1099,
+        "rating": 5,
+        "description": "At UCLA Health, our Division of Endocrinology, Diabetes and Metabolism consistently ranks among the top programs of its kind in the nation. Our team is dedicated to advancing the field of endocrinology (hormone-related conditions). We provide exceptional patient care and train future generations of clinicians."
+    },
+    {
+        "id": 4,
+        "name":"Cardiovascular Services",
+        "shortline": "Our specialists have been proving world-class, comprehensive cardiovascular care for more than 25 years.",
+        "thumb": "https://i.ibb.co/cF426sH/service-4.jpg",
+        "treated": 899,
+        "rating": 4.4,
+        "description": "The UCLA Division of Heart and Vascular Services has been providing the most advanced, world-class cardiovascular care for more than 25 years. Nationally, we rank 9th in Cardiology, as determined by U.S. News & World Report."
+    },
+    {
+        "id": 5,
+        "name":"Clinical Nutrition",
+        "shortline": "The experts in the Center for Human Nutrition offer personalized and results-oriented expert care.",
+        "thumb": "https://i.ibb.co/dtVc0p2/service-5.jpg",
+        "treated": 1999,
+        "rating": 4.8,
+        "description": "The UCLA Center for Human Nutrition is at the forefront of clinical practice and nutrition research. Our aim is to help patients and the community understand how nutrition affects overall health and wellness."
+    },
+    {
+        "id": 6,
+        "name":"Women's Health Services",
+        "shortline": "Our women’s health specialists provide comprehensive services, including OB/GYN, heart and mental health services.",
+        "thumb": "https://i.ibb.co/n0MFMr2/service-6.jpg",
+        "treated": 6799,
+        "rating": 4.9,
+        "description": "Women’s health specialists offer a full spectrum of gynecological and obstetric care. We have a long tradition of excellence in women’s health care and use advanced techniques to offer you the best treatment options."
+    },
+    {
+        "id": 7,
+        "name":"Rheumatology",
+        "shortline": "Our rheumatology team consistently paves the way in innovative, advanced care.",
+        "thumb": "https://i.ibb.co/2gTFLGB/service-7.jpg",
+        "treated": 899,
+        "rating": 4.4,
+        "description": "Our rheumatologists are experts in diagnosing and treating joint conditions, autoimmune diseases and connective tissue disorders. We consistently rank among the top 10 programs in the nation for rheumatology care by U.S. News & World Report."
+    },
+    {
+        "id": 8,
+         "name":"Psychiatry",
+        "shortline": "Our psychiatrists rank among the best in the nation for both inpatient and outpatient psychiatric care.",
+        "thumb": "https://i.ibb.co/6m55d1X/service-8.jpg",
+        "treated": 1999,
+        "rating": 4.8,
+        "description": "Through the Stewart and Lynda Resnick Neuropsychiatric Hospital, we care for patients with mental health concerns, developmental disabilities and psychiatric conditions. U.S. News & World Report ranks us No. 5 in the nation for psychiatry."
+    },
+    {
+        "id": 9,
+         "name":"Nephrology",
+        "shortline": "The UCLA Health Division of Nephrology leads the nation in groundbreaking research and innovative treatments for all types of kidney disorders .",
+        "thumb": "https://i.ibb.co/fYrY41r/service-9.jpg",
+        "treated": 399,
+        "rating": 4.9,
+        "description": "As recognized leaders in nephrology, our experts help children and adults with all types of kidney conditions. You’ll benefit from our vast experience and expertise in diagnosing and treating kidney disease and preserving kidney function. "
+    }
+]

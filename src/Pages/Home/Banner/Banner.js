@@ -14,7 +14,7 @@ const Banner = () => {
                     </Fade>
                     <Fade right>
                         <p className="dark-text text-white">We always provide best care of out valuable patients. <br /> We consider our patients as our family. We <br /> are always ready to take care of our family</p>
-                        <button className="pink-bg px-5 py-2 border-0 rounded text-white fw-bold">About Us</button>
+                        <button className="primary-btn px-5 py-2 rounded text-white fw-bold">About Us</button>
                     </Fade>
                 </div>
             </div>

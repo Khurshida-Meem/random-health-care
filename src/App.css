@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.main-component {
+  min-height: 100vh;
+}
+
 .primary-text {
   color: #3da9fc;
 }
@@ -30,12 +34,28 @@ p {
   color: #5f6c7b;
 }
 
-.p-secondary {
-  color: #90b4ce;
+.primary-btn {
+  background-color: #ef4565;
+  border: none;
+  transition: 0.3s;
 }
 
-.pink-bg {
-  background-color: #ef4565;
+.primary-btn:hover {
+  background-color: #cf3450;
+}
+
+.secondary-btn {
+  background-color: #3da9fc;
+  border: none;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background-color: #1495f8;
+}
+
+.p-secondary {
+  color: #90b4ce;
 }
 
 .light-bg {
@@ -44,4 +64,23 @@ p {
 
 .dark-bg {
   background-color: #094067;
+}
+
+button:hover {
+  box-shadow: 3px 3px 6px gray;
+}
+
+.component-headings {
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+}
+
+.component-headings::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 5px;
+  bottom: 0;
+  border-bottom: 4px solid #ef4565;
 }

@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <footer className='footer py-5'>
+        <footer className='footer py-5 mt-5'>
             <Container>
                 <div className='d-lg-flex justify-content-between align-items-center'>
                     {/*==================== 1st part ================================*/}
@@ -28,12 +28,12 @@ const Footer = () => {
                         <h5 className=" text-white"><i className="far dark-text fa-envelope"></i> university@random.edu.bd</h5>
                         <h5 className=" text-white"><i className="fas dark-text fa-globe"></i> web@random.com</h5>
                     </div>
-                    {/*==================== news Letter ================================*/}
+                    {/*==================== newsLetter ================================*/}
                     <div className="mx-2">
                         <h3 className="text-white">Join Our NewsLetter</h3>
                         <input type="email" placeholder="@Email" className="px-2 py-2 my-2 w-100 border-0 rounded " />
                         <br />
-                        <button className="pink-bg px-5 py-2 border-0 rounded text-white fw-bold">Subscribe</button>
+                        <button className="primary-btn px-5 py-2 rounded text-white fw-bold">Subscribe</button>
                     </div>
                 </div>
 

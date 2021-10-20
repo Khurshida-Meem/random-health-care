@@ -1,0 +1,12 @@
+.appointment-form-container input {
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.appointment-form-container input:hover {
+    box-shadow: 5px 5px 10px gray;
+}

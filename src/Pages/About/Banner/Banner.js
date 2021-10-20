@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div className="about-banner d-flex align-items-center justify-content-center">
             <h1 className="fw-bold display-3 p-secondary p-3">
-                <Zoom left cascade>
+                <Zoom left>
                     We Always Care for You
                 </Zoom>
             </h1>

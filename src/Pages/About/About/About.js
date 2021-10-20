@@ -25,9 +25,9 @@ const About = () => {
                     <Details></Details>
                 </div>
                 <div>
-                    <h2 className="mt-5 mb-3">Meet our Doctors</h2>
-                    <div className="row g-3">
-                        <Rotate bottom left cascade>
+                    <h2 className="mt-5 mb-3 ms-2">Meet our Doctors</h2>
+                    <div className="row g-3 ms-2">
+                        <Rotate bottom left>
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div>
                                     <img src={doctor1} alt="" height="200px" width="300px" />

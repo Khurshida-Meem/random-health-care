@@ -12,18 +12,10 @@ const useFirebase = () => {
     const auth = getAuth();
 
     // create user using email password
-    const createUsingEmailPassword = (uname, email, password) => {
+    const createUsingEmailPassword = (email, password) => {
         setIsLoading(true);
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                setUserName(uname);
-                window.location.reload();
-                setError('');
-            })
-            .catch(error => {
-                setError(error.message);
-            })
-            .finally(() => setIsLoading(false))
+        return createUserWithEmailAndPassword(auth, email, password);
+
     };
     // set name 
     const setUserName = (uname) => {
@@ -33,19 +25,18 @@ const useFirebase = () => {
     // login with email password
     const signInUsingEmailandPass = (email, password) => {
         setIsLoading(true);
-        signInWithEmailAndPassword(auth, email, password)
-            .then(() => {
-                setError('');
-            })
-            .catch(error => {
-                setError(error.message);
-            })
-            .finally(() => setIsLoading(false));
+        return signInWithEmailAndPassword(auth, email, password);
+        // .then(() => {
+        //     setError('');
+        // })
+        // .catch(error => {
+        //     setError(error.message);
+        // })
+        // .finally(() => setIsLoading(false));
     }
     // sign in using google
     const signInUsingGoogle = () => {
         setIsLoading(true);
-
         return signInWithPopup(auth, googleProvider);
     }
 
@@ -75,6 +66,7 @@ const useFirebase = () => {
         user,
         isLoading,
         error,
+        setUserName,
         setError,
         setUser,
         setIsLoading,

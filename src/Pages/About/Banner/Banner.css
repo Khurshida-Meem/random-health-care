@@ -1,0 +1,8 @@
+.about-banner {
+    background-image: url(../../../assets/images/homeAbout.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+}

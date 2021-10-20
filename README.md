@@ -8,5 +8,5 @@ This project is available at [Live Site](https://random-health-care.web.app/home
 - private route
 - animation with react reaveal
 - email password validation using react hook form
-- is cooking
+- used google map api
 

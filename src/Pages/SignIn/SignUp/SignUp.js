@@ -58,7 +58,7 @@ const SignUp = () => {
                                     <input type="password" onBlur={handlePasswordChange} className="my-2 field p-2" id="exampleInputPassword1" placeholder="Password" required />
                                 </div>
                                 <div className="text-center error">{error}</div>
-                                <button type="submit" className="secondary-btn px-5 py-2 rounded text-white fw-bold mt-4 auth-btn">Sign Up</button>
+                                <button type="submit" className="secondary-btn px-5 py-2 rounded text-white fw-bold mt-4 auth-btn"><i className="fas fa-sign-in-alt"></i> Sign Up</button>
                             </form>
                             <div className="text-center">
                                 <NavLink className="secondary-text text-center pb-5" to="/signin">Already Registered?</NavLink>

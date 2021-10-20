@@ -26,6 +26,7 @@ const Header = () => {
                     <Nav className="ms-auto d-lg-flex align-items-center">
                         <NavLink className="navlinks text-white me-3 pb-2" to='/home'>HOME</NavLink>
                         <NavLink className="navlinks text-white me-3 pb-2" to='/about'>ABOUT</NavLink>
+                        <NavLink className="navlinks text-white me-3 pb-2" to='/appointment'>APPOINTMENT</NavLink>
                         {
                             !user ? <NavLink className="navlinks text-white me-3 pb-2" to='/signin'>SIGN IN</NavLink> :
                                 <div className="d-flex align-items-center">

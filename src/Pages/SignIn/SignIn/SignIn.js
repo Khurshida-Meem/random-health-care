@@ -14,7 +14,7 @@ const SignIn = () => {
     const history = useHistory();
     const redirect_url = location.state?.from?.pathname || '/home';
 
-    const { user, signInUsingGoogle, signInUsingEmailandPass, error, setIsLoading, isLoading } = firebaseContext;
+    const { user, signInUsingGoogle, signInUsingEmailandPass, error, setIsLoading } = firebaseContext;
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         signInUsingEmailandPass(data.email, data.password);
@@ -22,15 +22,12 @@ const SignIn = () => {
 
     // handle google login
     const handleGoogleLogin = () => {
-        console.log(isLoading);
         signInUsingGoogle()
             .then(result => {
                 history.push(redirect_url);
             })
             .finally(() => setIsLoading(false));
     }
-    console.log(user);
-    console.log(isLoading);
 
     return (
         <Container className="d-flex justify-content-center my-5">
@@ -45,7 +42,7 @@ const SignIn = () => {
                                 <input className="py-2 ps-2 field mt-4" type="password" placeholder="Password" {...register("password", { required: true })} />
                                 {errors.password && <span className="error">This field is required</span>}
                                 {<span className="error">{error}</span>}
-                                <input className="secondary-btn px-5 py-2 rounded text-white fw-bold mt-4" type="submit" />
+                                <button type="submit" className="secondary-btn px-5 py-2 rounded text-white fw-bold mt-4 auth-btn"><i className="fas fa-sign-in-alt"></i> Sign In</button>
                             </form>
                             {/* ===========google login=============== */}
                             <div className="text-center">

@@ -1,15 +1,19 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { useParams, useHistory } from 'react-router';
 import useDatabase from '../../../hooks/useDatabase';
 import Rating from 'react-rating';
 
 const ServiceDetail = () => {
+    const history = useHistory()
     const { serviceId } = useParams();
     const services = useDatabase(`https://raw.githubusercontent.com/Khurshida-Meem/fake-Datas/main/Random-hospital/${serviceId}`);
 
     console.log(services);
     const { description, name, rating, shortline, thumb, treated } = services;
+    const handleButtonClick = () => {
+        history.push('/appointment')
+    }
     return (
         <div className="main-component mt-5">
             <Container>
@@ -30,7 +34,7 @@ const ServiceDetail = () => {
                         <p>
                             {description}
                         </p>
-                        <button className="primary-btn px-4 py-3 text-white rounded fw-bold">Make an Appoinment</button>
+                        <button onClick={handleButtonClick} className="primary-btn px-4 py-3 text-white rounded fw-bold"><i className="fas fa-calendar-check"></i> Make an Appoinment</button>
                     </div>
                 </div>
                 <div>

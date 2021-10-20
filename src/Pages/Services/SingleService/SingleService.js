@@ -25,7 +25,7 @@ const SingleService = (props) => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer className="border-0 bg-white">
-                        <button onClick={handleDetailClick} className="light-bg px-5 py-2 border-0 rounded text-white fw-bold mb-2 ">Show Details</button>
+                        <button onClick={handleDetailClick} className="light-bg px-5 py-2 border-0 rounded text-white fw-bold mb-2 "><i className="fas fa-info-circle"></i> Show Details</button>
                     </Card.Footer>
                 </Card>
             </Fade>

@@ -1,18 +1,36 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './SignIn.css'
 import img from '../../../assets/images/login.jpg'
 
 const SignIn = () => {
     const { firebaseContext } = useAuth();
-    const { user, signInUsingGoogle, signInUsingEmailandPass, error } = firebaseContext;
+
+    // redirect to home page or the page came from
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from?.pathname || '/home';
+
+    const { user, signInUsingGoogle, signInUsingEmailandPass, error, setIsLoading, isLoading } = firebaseContext;
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         signInUsingEmailandPass(data.email, data.password);
     };
+
+    // handle google login
+    const handleGoogleLogin = () => {
+        console.log(isLoading);
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_url);
+            })
+            .finally(() => setIsLoading(false));
+    }
+    console.log(user);
+    console.log(isLoading);
 
     return (
         <Container className="d-flex justify-content-center my-5">
@@ -29,13 +47,14 @@ const SignIn = () => {
                                 {<span className="error">{error}</span>}
                                 <input className="secondary-btn px-5 py-2 rounded text-white fw-bold mt-4" type="submit" />
                             </form>
+                            {/* ===========google login=============== */}
                             <div className="text-center">
-                                <button className="primary-btn provider-btn py-2 rounded text-white fw-bold mb-3" onClick={signInUsingGoogle}><i className="fab fa-google"></i> Sign In Using Google</button>
+                                <button className="primary-btn provider-btn py-2 rounded text-white fw-bold mb-3" onClick={handleGoogleLogin}><i className="fab fa-google"></i> Sign In Using Google</button>
                                 <br />
                                 <NavLink className="secondary-text text-center pb-5" to="/signup">New to Random Health Care?</NavLink>
                             </div>
                         </div>
-                        <div>
+                        <div className="d-flex justify-content-center">
                             <img src={img} alt="" className="w-75" />
                         </div>
 

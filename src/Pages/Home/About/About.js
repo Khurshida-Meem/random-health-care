@@ -12,13 +12,13 @@ const About = () => {
                         <h2 className=" pb-2">Who We Are</h2>
                     </div>
                     <div>
-                        <p className="   pe">A hospital is a health care institution providing patient treatment with specialized <br /> medical and nursing staff and medical equipment. The best-known type of hospital is the general hospital, <br /> which typically has an emergency department to treat urgent health problems ranging from fire and accident <br /> victims to a sudden illness. A district hospital typically is the major health <br /> care facility in its region, with many beds for intensive care and additional beds for patients who need <br /> long-term care. Specialized hospitals include trauma centers.</p>
+                        <p className="pe">A hospital is a health care institution providing patient treatment with specialized <br /> medical and nursing staff and medical equipment. The best-known type of hospital is the general hospital, <br /> which typically has an emergency department to treat urgent health problems ranging from fire and accident <br /> victims to a sudden illness. A district hospital typically is the major health <br /> care facility in its region, with many beds for intensive care and additional beds for patients who need <br /> long-term care. Specialized hospitals include trauma centers.</p>
                     </div>
                 </div>
                 <div>
                     <div className=" m-3">
                         <h2 className="   component-headings pb-3">Our Working Hour</h2>
-                        <table class="table banner-content-bg p-5">
+                        <table className="table banner-content-bg p-5">
                             <thead>
                                 <tr>
                                     <th scope="col">Day</th>

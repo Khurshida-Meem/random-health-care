@@ -4,6 +4,7 @@ import AuthProvider from './contexts/AuthProvider';
 import About from './Pages/About/About/About';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import ServiceDetail from './Pages/Services/ServiceDetail/ServiceDetail';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -23,12 +24,12 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
-            <Route path='/service/:serviceId'>
+            <PrivateRoute path='/service/:serviceId'>
               <ServiceDetail></ServiceDetail>
-            </Route>
-            <Route path='/about'>
+            </PrivateRoute>
+            <PrivateRoute path='/about'>
               <About></About>
-            </Route>
+            </PrivateRoute>
             <Route path='/signin'>
               <SignIn></SignIn>
             </Route>

@@ -8,9 +8,9 @@ const Banner = () => {
 
         <div className="banner banner1 d-flex justify-content-center align-items-center">
             <div className="p-5 m-3 banner-content-bg">
-                <div className="p-5 banner-content-bg">
+                <div className="p-3 banner-content-bg">
                     <Fade left>
-                        <h1 className="display-3 fw-bold text-white">Wellcome to  <br />Random Health Care</h1>
+                        <h1 className="display-4 fw-bold text-white">Wellcome to  <br />Random Health Care</h1>
                     </Fade>
                     <Fade right>
                         <p className="dark-text text-white">We always provide best care of out valuable patients. <br /> We consider our patients as our family. We <br /> are always ready to take care of our family</p>

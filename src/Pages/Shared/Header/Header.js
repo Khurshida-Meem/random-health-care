@@ -27,9 +27,9 @@ const Header = () => {
                         <NavLink className="navlinks text-white me-3 pb-2" to='/home'>HOME</NavLink>
                         <NavLink className="navlinks text-white me-3 pb-2" to='/about'>ABOUT</NavLink>
                         {
-                            !user ? <NavLink className="text-white me-3 pb-2" to='/signin'>SIGN IN</NavLink> :
+                            !user ? <NavLink className="navlinks text-white me-3 pb-2" to='/signin'>SIGN IN</NavLink> :
                                 <div className="d-flex align-items-center">
-                                    <p className="navlinks text-white pb-2 mt-3">{!user.displayName ? user.email : user.displayName}</p>
+                                    <p className="text-white pb-2 mt-3">{!user.displayName ? user.email : user.displayName}</p>
                                     <button className="border-0 light-bg text-white fw-bold ms-3 pb-2" onClick={logOut}>Logout</button>
                                 </div>
                         }

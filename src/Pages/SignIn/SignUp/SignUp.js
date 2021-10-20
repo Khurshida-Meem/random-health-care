@@ -10,8 +10,7 @@ const SignUp = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-    const { user, createUsingEmailPassword } = firebaseContext;
+    const { user, createUsingEmailPassword, error, setError } = firebaseContext;
 
     const handleNameChange = e => {
         setName(e.target.value);
@@ -31,6 +30,7 @@ const SignUp = () => {
             return;
         }
         createUsingEmailPassword(name, email, password);
+
     }
 
     return (
@@ -64,7 +64,7 @@ const SignUp = () => {
                                 <NavLink className="secondary-text text-center pb-5" to="/signin">Already Registered?</NavLink>
                             </div>
                         </div>
-                        <div>
+                        <div className="d-flex justify-content-center">
                             <img src={img} alt="" className="w-75 m-3" />
                         </div>
 

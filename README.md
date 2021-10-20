@@ -2,7 +2,11 @@
 
 This project is available at [Live Site](https://random-health-care.web.app/home).
 
-## Features
+## Available Features
 
-- features are cooking
+- Authentication using firebase
+- private route
+- animation with react reaveal
+- email password validation using react hook form
+- is cooking
 

@@ -12,6 +12,8 @@ const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const { user, createUsingEmailPassword, error, setError, setUserName, setIsLoading } = firebaseContext;
+
+    // redirect to home page or the page came from
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from?.pathname || '/home';

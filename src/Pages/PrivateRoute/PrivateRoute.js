@@ -8,6 +8,7 @@ const PrivateRoute = ({ children, ...rest }) => {
     const { firebaseContext } = useAuth();
     const { user, isLoading } = firebaseContext;
     if (isLoading) {
+        // spinner
         return (
             <div className="text-center mt-5">
                 <Spinner animation="border" variant="info" />

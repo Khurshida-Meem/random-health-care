@@ -21,6 +21,7 @@ const About = () => {
                     </Fade>
                 </div>
                 <div>
+                    {/* ======================== Schedule ============================ */}
                     <div className=" m-3">
                         <Fade left>
                             <h2 className="   component-headings pb-3">Our Working Hour</h2>

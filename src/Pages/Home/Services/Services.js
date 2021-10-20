@@ -7,6 +7,8 @@ import SingleService from '../../Services/SingleService/SingleService';
 const Services = () => {
     const services = useDatabase('./serviceData.json');
     return (
+
+        // home page services
         <div className="my-5">
             <Container>
                 <h2 className="primary-text component-headings pb-3">Our Services</h2>

@@ -26,13 +26,7 @@ const useFirebase = () => {
     const signInUsingEmailandPass = (email, password) => {
         setIsLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
-        // .then(() => {
-        //     setError('');
-        // })
-        // .catch(error => {
-        //     setError(error.message);
-        // })
-        // .finally(() => setIsLoading(false));
+
     }
     // sign in using google
     const signInUsingGoogle = () => {

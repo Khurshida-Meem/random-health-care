@@ -47,6 +47,7 @@ const SignIn = () => {
                 !user ?
                     <div className='d-lg-flex justify-content-center align-items-center'>
                         <div>
+                            {/* ================ react hook form =========================== */}
                             <Fade right>
                                 <h2 className=" pb-2 text-center">Please Sign In</h2>
                                 <form onSubmit={handleSubmit(onSubmit)} className="form-container">
